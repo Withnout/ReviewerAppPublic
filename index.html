@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script>
+        const serverURL = 'http://192.168.1.6:3000'
+
+        async function postRequest(route='', body={}){
+            try {
+                const response = await fetch(route, {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                })
+                if (!response.ok) {
+                    document.getElementById('result').innerText = 'error'
+                    throw new Error('Network response was not ok')
+                }
+                const data = await response.json()
+                document.getElementById('result').innerText = JSON.stringify(data)
+                return data
+            } catch (err) {
+                console.log(err)
+            }   
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+    <title>Reviewer App</title>
+</head>
+<body>
+    HELLO
+    <button onclick="postRequest(serverURL + `/sample/test`)">SEND REQUEST</button>
+    <div id="result"></div>
+</body>
+</html>
