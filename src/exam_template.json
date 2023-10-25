@@ -1,0 +1,35 @@
+{
+    "exam_id": "8char alphabet",
+    "owner": "",
+    "title": "",
+    "description": "",
+    "tags": ["tag1", "tag2"],
+    "questions": [
+        {
+            "question_id": "",
+            "image": "",
+            "content": "",
+            "answers": ["choice_1"],
+            "choices": {
+                "choice_1": "",
+                "choice_2": "",
+                "choice_3": "",
+                "choice_4": ""
+            },
+            "hint": ""
+        },
+        {
+            "question_id": "",
+            "image": "",
+            "content": "",
+            "answers": ["choice_1"],
+            "choices": {
+                "choice_1": "",
+                "choice_2": "",
+                "choice_3": "",
+                "choice_4": ""
+            },
+            "hint": ""
+        }
+    ]
+}
