@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/tinymce.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="lib/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="lib/eqneditor/eqneditor.js"></script>
+
+    <script src="utils/windows.js"></script>
+
+    <script src="script.js" defer></script>
+    <title>Reviewer App</title>
+</head>
+
+<body>
+    <div id="appWindow" class="layer">
+        <div class="header">
+            <div class="title">
+                Reviewer App
+            </div>
+        </div>
+        <div class="body outline">
+            <div id="homeTab" class="tab">
+                home
+            </div>
+            <div id="statsTab" class="tab">
+                stats
+            </div>
+            <div id="accountTab" class="tab">
+                accounts
+                <div id="localStorage">HERE HERE</div>
+                <button id="writeData" onclick="writeData()">write</button>
+                <button id="readData" onclick="readData()">read</button>
+                <button id="deleteData" onclick="deleteData()">delete</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <button id="homeButton" class="navbarButton" onclick="gotoTab('home')">
+                <img src="assets/icons/home.svg" alt="">
+            </button>
+            <button id="statsButton" class="navbarButton" onclick="gotoTab('stats')">
+                <img src="assets/icons/statistics.svg" alt="">
+            </button>
+            <button id="accountButton" class="navbarButton" onclick="gotoTab('account')">
+                <img src="assets/icons/account.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <div id="examWindow" class="layer">
+        Exam
+    </div>
+    <div id="dialogWindow" class="layer">
+        Dialog
+    </div>
+</body>
+
+</html>

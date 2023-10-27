@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget
+    android-versionCode='1'
+    id='com.thisthat.ReviewerApp'
+    version='1.0.0'
+    xmlns='https://www.w3.org/ns/widgets'>
+
+    <name>Reviewer App</name>
+    <description>review review review </description>
+    <author>Withnout</author>
+
+    <preference name='orientation' value='portrait' />
+
+</widget>
